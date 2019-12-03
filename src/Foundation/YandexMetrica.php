@@ -49,9 +49,9 @@ class YandexMetrica
      */
     public function __construct()
     {
-        $this->cache = config('yandex-metrika.cache');
-        $this->token = config('yandex-metrika.token');
-        $this->counter_id = config('yandex-metrika.counter_id');
+        $this->cache = config('yandex-metrica.cache');
+        $this->token = config('yandex-metrica.token');
+        $this->counter_id = config('yandex-metrica.counter_id');
     }
 
     /**
@@ -451,7 +451,7 @@ class YandexMetrica
 
             } catch (ClientException $e)
             {
-                Log::error('Yandex Metrika: '.$e->getMessage());
+                Log::error('Yandex Metrica: '.$e->getMessage());
 
                 $result = null;
             }

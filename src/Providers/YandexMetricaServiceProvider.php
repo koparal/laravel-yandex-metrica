@@ -1,6 +1,6 @@
 <?php
 
-namespace YandexMetrika\Providers;
+namespace YandexMetrica\Providers;
 
 use YandexMetrica\Facades\YandexMetrica;
 use Illuminate\Support\ServiceProvider;
@@ -14,9 +14,9 @@ class YandexMetricaServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/yandex-metrika.php';
+        $configPath = __DIR__ . '/../config/yandex-metrica.php';
 
-        $this->publishes( [$configPath => config_path('yandex-metrika.php') ], 'yandex-metrika');
+        $this->publishes( [$configPath => config_path('yandex-metrica.php') ], 'yandex-metrica');
     }
 
     /**
