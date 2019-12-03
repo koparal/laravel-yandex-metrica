@@ -1,0 +1,31 @@
+{
+  "name": "koparal/laravel-yandex-metrica",
+  "description": "Laravel Yandex Metrica",
+  "keywords": ["laravel", "yandex", "metrica","analytics"],
+  "authors": [
+    {
+      "name": "Laravel Yandex Metrica",
+      "email": "sabankoparal@gmail.com",
+      "homepage": "https://github.com/koparal/laravel-yandex-metrica"
+    }
+  ],
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.4.0",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "YandexMetrica\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "YandexMetrica\\Providers\\YandexMetricaServiceProvider"
+      ]
+    }
+  }
+}
