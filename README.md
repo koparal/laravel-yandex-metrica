@@ -8,6 +8,11 @@ This package is prepared for Yandex Metrica
 composer require koparal/laravel-yandex-metrica
 ```
 
+
+```bash
+php artisan vendor:publish 
+```
+
 ## Usage
 
 ```php
