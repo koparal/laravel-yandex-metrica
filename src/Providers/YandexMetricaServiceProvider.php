@@ -14,7 +14,7 @@ class YandexMetricaServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $configPath = __DIR__ . '/../config/yandex-metrica.php';
+        $configPath = __DIR__ . '/../Config/yandex-metrica.php';
 
         $this->publishes( [$configPath => config_path('yandex-metrica.php') ], 'yandex-metrica');
     }
